@@ -3,7 +3,9 @@ Codezi is a free source-code editor for Windows, Linux and macOS. Features inclu
 
 <br>
 <br>
+
 ## Easily accessible files list on the right and the output component at the bottom. Shortcuts for creating a new file, saving a file, closing the window and closing the output component available.
+
 <br>
 
 
@@ -11,8 +13,10 @@ Codezi is a free source-code editor for Windows, Linux and macOS. Features inclu
 ![codezi_1](Screenshots/codezi_1.png)
 
 <br>
-<br>
+<br> 
+
 ## Embedded frames for Google, Github, Stack Overflow and many more! 
+
 <br>
 
 
@@ -21,11 +25,13 @@ Codezi is a free source-code editor for Windows, Linux and macOS. Features inclu
 <br>
 
 ## More than 30 themes available just at one click. 
+
 <br>
 
 ![codezi_3](Screenshots/codezi_3.png)
 <br>
 <br>
+
 ##  License
 
 MIT License | Copyright (c) Pratyush Shivam <br>
