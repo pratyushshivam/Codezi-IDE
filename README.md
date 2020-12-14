@@ -32,11 +32,4 @@ Codezi is a free source-code editor for Windows. Features include support for  d
 <br>
 <br>
 
-##  License
 
-MIT License | Copyright (c) Pratyush Shivam <br>
-[Full license](LICENSE.md)
-
-## Credits 
-- [Ace](https://ace.c9.io/)
-- [Electron](https://www.electronjs.org/)
