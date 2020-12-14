@@ -24,7 +24,7 @@ Codezi is a free source-code editor for Windows, Linux and macOS. Features inclu
 <br>
 <br>
 
-## More than 30 themes available just at one click. 
+## More than 30 themes available at a single click.
 
 <br>
 
