@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+
+}
+body *{
+    box-sizing: border-box;
+}
+
+
+.container{
+    height: 100%;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.windowTitle{
+    padding:10px;
+    height: auto;
+    display: inline-block;
+    /* border: 2px solid red; */
+    background-color: rgb(83, 52, 97);
+    
+    font-family: Montserrat;
+}
+#quit:hover{
+    background-color: rgb(184, 54, 54);
+   
+}
+
+.windowControls{
+    float: right;
+    display: grid;
+    background-color: rgb(83, 52, 97);
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-right: 50px;
+    width: 100px;
+}
+.windowControls button{
+    outline: 0;
+    border: 0;
+    padding: 5px;
+    background: none;
+}
+
+.titleBarStyle{
+    background-color: #372449;
+    color: rgb(250, 170, 246);
+    font-family: Montserrat;
+    font-size: 7.9pt;
+    
+    /* border: 2px solid red; */
+}
+
+.windowControlsStyle{
+
+
+}
+
+.windowControlsStyle button{
+    color: #fff;
+    font-weight: bold;
+    
+
+}
+
+.windowControlsStyle button:hover{
+    background-color: #48494c;
+    cursor: pointer;
+}
+
+.preventSelect{
+    user-select: none;
+    -webkit-touch-callout:none;
+    -webkit-user-select: none;
+    width: 100%;
+}
+
+.draggable{
+    /* border:2px solid red; */
+    /* width: fit-content; */
+    -webkit-app-region:drag !important;
+}
+.titleBar{
+    display: grid;
+    height: 61px;
+    /* border: 2px solid red; */
+    grid-template-columns: 1fr auto;
+}
+.svgfill{
+    fill: rgb(195, 0, 255) ;
+    width: 10px;
+  
+}

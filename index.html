@@ -1,0 +1,550 @@
+<html>
+
+<head>
+
+	<title>codezi- New file</title>
+
+	<link rel="stylesheet" href="css/codeslate.css">
+	<link rel="stylesheet" href="css/theme.css">
+	<link rel="stylesheet" href="css/titleBar.css">
+	<link rel="stylesheet" href="css/jqueryui.css">
+	<link rel="stylesheet" href="css/customThemeBlock.css">
+	<link rel="stylesheet" href="css/settingssection.css">
+
+	<link href="css/menu.css" rel="stylesheet" type="text/css" />
+
+
+	<link href='css/spectrum.css' rel='stylesheet' type='text/css' />
+
+
+	<!-- Insert this line above script imports  -->
+	<script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
+
+	<!-- normal script imports etc  -->
+	<script src="js/libraries/jquery.min.js"></script>
+
+	<script src="js/libraries/jquery.menu.js"></script>
+	<script src="js/libraries/ext-searchbox.js"></script>
+	<script src="js/libraries/ext-beautify.js"></script>
+	<script src="js/libraries/ext-error_marker.js"></script>
+	<script src="js/libraries/ext-spellcheck.js"></script>
+	<script src="js/libraries/jqueryui.js"></script>
+	<script src="js/libraries/fontaw.js"></script>
+
+
+
+	<!-- Insert this line after script imports -->
+	<!--<script>if (window.module) module = window.module;</script>-->
+
+	<script src="js/libraries/ace.js" type="text/javascript" charset="utf-8"></script>
+
+	<script src="editor/modes/mode-javascript.js"></script>
+	<script src="editor/modes/mode-java.js"></script>
+	<script src="editor/modes/mode-html.js"></script>
+	<script src="editor/modes/mode-css.js"></script>
+	<script src="editor/modes/mode-c_cpp.js"></script>
+	<script src="editor/modes/mode-json.js"></script>
+	<script src="editor/modes/mode-php.js"></script>
+	<script src="editor/modes/mode-python.js"></script>
+	<script src="editor/modes/mode-typescript.js"></script>
+	<script src="editor/modes/mode-c_cpp.js"></script>
+	<script src="editor/modes/mode-xml.js"></script>
+	<script src="editor/modes/mode-dart.js"></script>
+
+	<!--<script src="theme-snippet-default.js"></script>-->
+	<script src="theme-snippet-default.js"></script>
+
+	<script src="editor/themes/theme-ambiance.js"></script>
+	<script src="editor/themes/theme-tomorrow_night_bright.js"></script>
+	<script src="editor/themes/theme-tomorrow_night_eighties.js"></script>
+	<script src="editor/themes/theme-katzenmilch.js"></script>
+	<script src="editor/themes/theme-dreamweaver.js"></script>
+	<script src="editor/themes/theme-chrome.js"></script>
+	<script src="editor/themes/theme-chaos.js"></script>
+	<script src="editor/themes/theme-clouds.js"></script>
+	<script src="editor/themes/theme-clouds_midnight.js"></script>
+
+	<script src="editor/themes/theme-cobalt.js"></script>
+	<script src="editor/themes/theme-crimson_editor.js"></script>
+	<script src="editor/themes/theme-dawn.js"></script>
+	<script src="editor/themes/theme-dracula.js"></script>
+	<script src="editor/themes/theme-eclipse.js"></script>
+	<script src="editor/themes/theme-github.js"></script>
+
+	<script src="editor/themes/theme-gob.js"></script>
+	<script src="editor/themes/theme-gruvbox.js"></script>
+	<script src="editor/themes/theme-idle_fingers.js"></script>
+	<script src="editor/themes/theme-kr_theme.js"></script>
+	<script src="editor/themes/theme-kuroir.js"></script>
+	<script src="editor/themes/theme-merbivore.js"></script>
+
+	<script src="editor/themes/theme-merbivore_soft.js"></script>
+	<script src="editor/themes/theme-mono_industrial.js"></script>
+	<script src="editor/themes/theme-monokai.js"></script>
+	<script src="editor/themes/theme-pastel_on_dark.js"></script>
+	<script src="editor/themes/theme-solarized_dark.js"></script>
+	<script src="editor/themes/theme-solarized_light.js"></script>
+
+	<script src="editor/themes/theme-sqlserver.js"></script>
+	<script src="editor/themes/theme-terminal.js"></script>
+	<script src="editor/themes/theme-textmate.js"></script>
+	<script src="editor/themes/theme-tomorrow.js"></script>
+	<script src="editor/themes/theme-twilight.js"></script>
+	<script src="editor/themes/theme-xcode.js"></script>
+
+	<script src="ace-builds-master/src-min/snippets/php.js"></script>
+	<script src="ace-builds-master/src-min/snippets/html.js"></script>
+	<script src="ace-builds-master/src-min/snippets/html.js"></script>
+	<script src="js/ace.js"></script>
+	<script src="js/mode-javascript.js"></script>
+	<script src="js/editor.js"></script>
+	<link rel="stylesheet" href="css/output.css">
+
+	<!-- themes end -->
+
+</head>
+
+<body>
+
+	<div id="contextMenu">
+		<!--  context menu -->
+	</div>
+
+	<div id="renameFileContainer">
+		Rename...
+		<input type="text" id="renameInput">
+	</div>
+
+	<div class="container">
+
+		<div class="titleBar titleBarStyle">
+
+			<div class="windowTitle draggable preventSelect"> <span id='currentFileName'> </span><span class="appnames">codezi - Integrated Developer Environment</span></div>
+
+		   <div class="windowControls preventSelect windowControlsStyle">
+                <button id="minimise">
+                    <svg class="svgfill" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 492 492"
+                        style="enable-background:new 0 0 492 492;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path d="M465.064,207.562H26.908C12.076,207.562,0,219.698,0,234.53v22.804c0,14.832,12.072,27.104,26.908,27.104h438.156
+			c14.84,0,26.936-12.272,26.936-27.104V234.53C492,219.698,479.904,207.562,465.064,207.562z" />
+                            </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                    </svg>
+
+                </button>
+                <button id="maximise">
+                    <svg class="svgfill" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+                        <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                        <g><g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)"><path d="M7360.1,4165.8c-55.5-28.7-120.6-124.4-120.6-179.9c0-13.4,13.4-51.7,30.6-86.1c59.4-124.4,57.4-124.4,1062.3-124.4h907.3L7444.3,1980L5650.8,186.6v-80.4c0-145.5,153.1-256.5,269.9-197.1c24.9,13.4,840.2,817.3,1812.6,1787.7l1764.7,1762.8V2560c0-823,3.8-903.4,34.4-939.8c84.2-105.3,208.6-112.9,302.4-19.1l65.1,65.1v1179c0,1035.5-3.8,1188.6-30.6,1238.4c-57.4,112.9-49.8,112.9-1303.5,112.9C7564.9,4196.5,7413.7,4192.6,7360.1,4165.8z"/><path d="M220.7,2942.8c-130.2-55.5-120.6,208.6-120.6-3466.3v-3322.8l65.1-65.1l65.1-65.1h4157.3h4157.3l65.1,65.1l65.1,65.1v2511.2c0,2308.3-1.9,2515-32.5,2564.8c-61.3,105.3-214.4,128.2-306.3,49.8l-53.6-45.9l-9.6-2400.2l-9.6-2398.3H4387.6H511.7l-5.7,3058.6l-3.8,3056.7h3179.2c3523.7,0,3273-9.6,3336.2,124.4c17.2,34.4,30.6,72.7,30.6,86.1c0,13.4-13.4,51.7-30.6,86.1c-63.2,134,201,124.4-3447.2,124.4C812.2,2969.6,272.4,2965.7,220.7,2942.8z"/></g></g>
+                        </svg>
+                </button>
+                <button id="quit">
+                    <svg class="svgfill"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+                        <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                        <g><path d="M100,14.5l890,887.2l-83.5,83.8L16.5,98.3L100,14.5z"/><path d="M903.8,14.4l83.3,83.9L93.3,985.6L10,901.7L903.8,14.4z"/></g>
+                        </svg>
+                </button>
+            </div>
+
+			<div id="menu-bar">
+				<ul class="main-menu">
+					<li>
+						File
+						<ul>
+
+							<li class="icon save" onclick='createNewFile()'><a href="#">New File<span>Ctrl+N</span></a>
+							</li>
+							<li onclick='selectFolder()'>New Folder</li>
+
+							<li class="separator"></li>
+							<li class="icon save" onclick='saveFile()'><a
+									href="javascript:void(0)">Save<span>Ctrl+S</span></a></li>
+
+							<li class="icon save" onclick="showSaveDialogAndSaveFile()"><a
+									href="javascript:void(0)">Save As</a></li>
+
+							<li class="separator"></li>
+
+						</ul>
+					</li>
+					<li>
+						View
+						<ul>
+							<li>Documents
+								<ul>
+									<li>All</li>
+									<li class="separator"></li>
+									<li>Unfinished</li>
+									<li>Closed</li>
+								</ul>
+							</li>
+							<li><a href="/#!/products">Products</a></li>
+							<li class="separator"></li>
+							<li>
+								First level
+								<ul>
+									<li>
+										Second level
+										<ul>
+											<li>
+												Third level menu item
+											</li>
+											<li>
+												Third level
+												<ul>
+													<li>
+														Forth level menu item 1
+													</li>
+													<li>
+														Forth level menu item 2
+													</li>
+												</ul>
+											</li>
+											<li class="separator"></li>
+											<li>Another third level menu item</li>
+										</ul>
+									</li>
+									<li>
+										Items will make menus stretch as needed
+									</li>
+									<li class="separator"></li>
+									<li>
+										Another menu item
+									</li>
+								</ul>
+							</li>
+							<li class="separator"></li>
+							<li>Reports
+								<ul>
+									<li>Sell history</li>
+									<li>Clients history</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						Window
+						<ul>
+							<li class="icon save"><a href="javascript:void(0)">Full Screen<span>F11</span></a></li>
+
+							<li>
+								<a href="javascript:void(0)" onclick='toggleWidgets()'>Widgets<span><input
+											type='checkbox' id='widgetCheckbox'></span></a>
+							</li>
+							<li class="separator"></li>
+							<li>
+								Options
+							</li>
+						</ul>
+					</li>
+
+					<li>
+						Tools
+						<ul>
+							<li>Load codezi
+								<ul>
+									<li>C</li>
+									<li>C++</li>
+									<li>Java</li>
+									<li>Python</li>
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>JS</li>
+				
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+					<li>
+						Settings
+						<ul>
+							<li onclick='settings("theme")'>Themes</li>
+							<li class="separator"></li>
+							<li>Upgrade account</li>
+							<li>Registration</li>
+							<li class="separator"></li>
+							<li>Contact us</li>
+						</ul>
+					</li>
+
+					<li>
+						Help
+						<ul>
+							<li onclick='showShortcuts()'>Shortcuts</li>
+							<li class="separator"></li>
+							<li>Upgrade account</li>
+							<li>Registration</li>
+							<li class="separator"></li>
+							<li>Contact us</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div class="codingScreen preventSelect">
+
+
+		
+
+			<div class="editorContainer">
+				<div id="editor">
+				
+                </div>
+               
+
+				<!-- output  -->
+				<div class="outputcode">
+				  <h1>Output</h1>
+				</div>
+
+			    <div class="output">
+					<div class="editor__footer">
+						
+						<div class="editor__footer--right">
+							<div class="editor__console">
+							
+								<ul class="editor__console-logs"></ul>
+							</div>
+						</div>
+					</div>				
+				</div>
+				<div class="codeStat">
+                    <div class="currentLang">Javascript</div>
+				</div>
+
+
+			</div>
+			<div class="explorerContainer explorerContainerStyles" id="resizableExplorer">
+
+				<div class="filesContainer">
+					<!--all the new and opened files are shown here-->
+
+
+				</div>
+
+				<div class="folderFiles">
+					<!--all the contents of any folder is shown here-->
+					<div class="folderTitle">
+
+						<div id='folderName'></div>
+
+					
+
+					</div>
+					
+
+
+					<div class="exploredFilesContainer">
+
+					</div>
+					<button id="syncFiles" title="sync files"><i class='fas fa-sync-alt'></i></button>
+					<button id="changeFolder">Change Folder</button>
+
+				</div>
+				<div class="settingssection">
+					<div class=" editor__run settingssection__tab1">
+						<h1 >Run</h1>
+					</div>
+					<div class="editor__reset settingssection__tab1">
+						<h1>Clear</h1>
+					</div>
+				   
+					<div class="settingssection__tab1">
+						<h1>Extensions</h1>
+					</div>
+				   
+					<div class="settingssection__tab1">
+						<h1>Close Editor</h1>
+					</div>
+				  
+				   
+				   
+
+
+				</div>
+
+			</div>
+
+			<div class="widgetsContainer widgetsContainerStyles">
+
+
+
+				<div class="widgetLoader">
+
+					<div id='noConnectionViewContainer' style='display:none'>
+
+						<div class='noConnectionNote'>
+							<i class="far fa-frown frownFace"></i>
+							<br>
+							No Internet <br> Connection!
+						</div>
+
+					</div>
+					<div id='stackOverflowViewContainer' class='webviewContainer'>
+
+						<webview id="stackOverflowView" src="https://www.google.com"></webview>
+
+						<div class="widgetNavigator">
+
+							<button id='goBack'><i class="fas fa-chevron-circle-left"></i></button>
+							<div id='pageLoadProgress'></div>
+							<button id='goForward'><i class="fas fa-chevron-circle-right"></i></button>
+
+						</div>
+
+					</div>
+
+		
+
+					<div id='fontAwesomeViewContainer' class='webviewContainer'>
+
+						<webview id="fontAwesomeView" src="https://fontawesome.com/icons?d=gallery"></webview>
+
+						<div class="widgetNavigator">
+
+							<button id='goBack'><i class="fas fa-chevron-circle-left"></i></button>
+							<div id='pageLoadProgress'></div>
+							<button id='goForward'><i class="fas fa-chevron-circle-right"></i></button>
+
+						</div>
+
+					</div>
+					<div id='fontAwesomeViewContainer' class='webviewContainer'>
+
+						<webview id="fontAwesomeView" src="https://fontawesome.com/icons?d=gallery"></webview>
+
+						<div class="widgetNavigator">
+
+							<button id='goBack'><i class="fas fa-chevron-circle-left"></i></button>
+							<div id='pageLoadProgress'></div>
+							<button id='goForward'><i class="fas fa-chevron-circle-right"></i></button>
+
+						</div>
+
+					</div>
+
+					<div id='gitViewContainer' class='webviewContainer'>
+
+						<webview id="gitView" src="https://www.github.com"></webview>
+
+						<div class="widgetNavigator">
+
+							<button id='goBack'><i class="fas fa-chevron-circle-left"></i></button>
+							<div id='pageLoadProgress'></div>
+							<button id='goForward'><i class="fas fa-chevron-circle-right"></i></button>
+
+						</div>
+
+					</div>
+
+					<div id='cdnjsViewContainer' class='webviewContainer'>
+
+						<webview id="cdnjsView" src="https://cdnjs.com/"></webview>
+
+						<div class="widgetNavigator">
+
+							<button id='goBack'><i class="fas fa-chevron-circle-left"></i></button>
+							<div id='pageLoadProgress'></div>
+							<button id='goForward'><i class="fas fa-chevron-circle-right"></i></button>
+
+						</div>
+
+					</div>
+
+
+				</div>
+
+				<div class="widgetsDrawer">
+
+					
+					<button id='stackOverflow' onclick='loadView(id)'></button>
+					<button id='git' onclick='loadView(id)'></button>
+					<button id='linkedin' onclick='loadView(id)'></button>
+
+					<button id="fontAwesome" onclick='loadView(id)'></button>
+					<button id='cdnjs' onclick='loadView(id)'></button>
+					<div class='widgetsHeader'> <span>
+						<svg class="svgfill"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+							<metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+							<g><path d="M100,14.5l890,887.2l-83.5,83.8L16.5,98.3L100,14.5z"/><path d="M903.8,14.4l83.3,83.9L93.3,985.6L10,901.7L903.8,14.4z"/></g>
+							</svg>
+				   </span></div>
+	
+
+				</div>
+
+
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<!-- index.html -->
+
+	<script src='js/libraries/spectrum.js'></script>
+	<script src="js/globalContent.js"></script>
+	<script src="js/titleBarStuff.js"></script>
+	<script src="js/shortcuts.js"></script>
+	<script src="js/codeslate.js"></script>
+	<script src='js/widgetHandler.js'></script>
+
+
+	<!-- main for ace --> 
+	<script src="js/ace.js"></script>
+	<script src="js/mode-javascript.js"></script>
+	<script src="js/ext-language_tools.js"></script>
+
+
+	<!-- custom  -->
+	<script src="js/editor.js"></script>
+	<script src="js/editor-console.js"></script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

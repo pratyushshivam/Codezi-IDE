@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap');
+
+
+.settingssection{
+    /* border: 2px solid red; */
+    margin-top: 3%;
+    background-color: rgba(69, 1, 83, 0.315);
+   height:160px;
+    /* height: 500px; */
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: flex-end; */
+    flex-direction: column;
+ 
+
+}
+.settingssection__tab1{
+    /* border:2px solid red; */
+    margin-top: 4px;
+    margin-bottom: 4px;
+    color: rgb(195, 0, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.2s ease;
+}
+.settingssection__tab1:hover{
+    background-color: rgb(51, 5, 63);
+    color: white;
+    cursor: pointer;
+    font-weight: 100;
+}
+.settingssection__tab1 h1{
+    font-size: 12px;
+    font-family: 'Exo 2';
+    letter-spacing: 1.3px;
+    font-weight: 400;
+    
+
+}
+.folderTitle {
+    background: rgb(38, 1, 53);
+    margin-bottom: 3%;
+ 
+
+}
+.widgetsHeader {
+    background: rgb(38, 1, 53);
+    margin: 2% !important;
+
+    
+}
+#stackOverflow{
+    margin-top: 0.3em;
+
+}
+#fontAwesome{
+    margin-top: 1em;
+
+}
+#git{
+    margin-top: 1em;
+
+}
+#cdnjs{
+    margin-top: 1em;
+
+}
+.titleBarStyle {
+    background-color: #2a0e45;
+    color: rgb(250, 170, 246);
+    font-family: Montserrat;
+    font-size: 7.9pt;
+    /* border: 2px solid red; */
+}
+.windowTitle {
+    padding: 10px;
+    height: auto;
+    display: inline-block;
+    color: white;
+    /* border: 2px solid red; */
+    background-color: rgb(64, 21, 83);
+    font-family: Montserrat;
+}
+.windowControls{
+    background-color: rgb(64, 21, 83);
+
+
+}
