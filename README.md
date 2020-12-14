@@ -8,9 +8,9 @@ Codezi is a free source-code editor for Windows, Linux and macOS. Features inclu
 
 ![codezi_1](Screenshots/codezi_1.png)
 
-<br>
+
 ![codezi_2](Screenshots/codezi_2.png)
-<br>
+
 
 ![codezi_3](Screenshots/codezi_3.png)
 
