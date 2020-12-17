@@ -30,6 +30,5 @@ Codezi is a free source-code editor for Windows. Features include support for  d
 
 ![codezi_3](Screenshots/codezi_3.png)
 <br>
-<br>
 
 
